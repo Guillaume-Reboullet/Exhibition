@@ -1,5 +1,3 @@
-import Loader from "./Loader";
-
 interface SplashScreenProps {
   name: string;
   tagline: string;
@@ -21,7 +19,6 @@ export default function SplashScreen({
           <p className="font-serif text-lg italic text-lavender">{tagline}</p>
           <p className="font-serif text-lg italic text-lavender">{inspiration}</p>
         </div>
-        <Loader />
       </div>
     </div>
   );
