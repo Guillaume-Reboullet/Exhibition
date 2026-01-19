@@ -46,11 +46,11 @@
   --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
 
   /* Spacing */
-  --spacing-micro: var(--spacing-micro);
-  --spacing-related: var(--spacing-related);
-  --spacing-default: var(--spacing-default);
-  --spacing-section: var(--spacing-section);
-  --spacing-major: var(--spacing-major);
+  --spacing-micro: 0.5rem;
+  --spacing-related: 1rem;
+  --spacing-default: 1.5rem;
+  --spacing-section: 2.5rem;
+  --spacing-major: 4rem;
 }
 
 body {
