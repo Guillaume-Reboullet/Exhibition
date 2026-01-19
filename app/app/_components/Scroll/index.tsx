@@ -9,7 +9,7 @@ export default function Scroll({ onClick }: ScrollProps) {
   return (
     <button
       onClick={onClick}
-      className="scroll-indicator absolute left-1/2 -translate-x-1/2 bottom-(--spacing-major) cursor-pointer bg-transparent border-none p-0"
+      className="scroll-indicator absolute left-1/2 -translate-x-1/2 bottom-(--spacing-section) cursor-pointer"
     >
       <Image
         src="/arrow_scroll.svg"

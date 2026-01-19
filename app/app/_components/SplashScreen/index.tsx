@@ -24,7 +24,7 @@ export default function SplashScreen({
     >
       <div className="flex min-h-screen flex-col items-center justify-center bg-frost">
         <div className="flex flex-col items-center gap-(--spacing-related) text-center">
-          <h1 className="text-5xl font-bold tracking-tight text-prussian md:text-6xl">
+          <h1 className="text-5xl font-bold tracking-tight text-ink md:text-6xl">
             {name}
           </h1>
           <div className="flex flex-col items-center gap-(--spacing-micro) text-center">
