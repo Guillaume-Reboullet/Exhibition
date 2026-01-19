@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  /* Colors — Deep Sea Palette */
+  --color-frost: #F8F8F8;
+  --color-alabaster: #E0E1DD;
+  --color-lavender: #778DA9;
+  --color-dusk: #415A77;
+  --color-prussian: #1B263B;
+  --color-ink: #0D1B2A;
+
+  /* Semantic colors */
+  --background: var(--color-frost);
+  --background-secondary: var(--color-alabaster);
+  --foreground: var(--color-prussian);
+  --foreground-secondary: var(--color-lavender);
+  --foreground-strong: var(--color-ink);
+  --accent: var(--color-dusk);
+
+  /* Spacing */
+  --spacing-micro: 8px;
+  --spacing-related: 16px;
+  --spacing-default: 24px;
+  --spacing-section: 40px;
+  --spacing-major: 64px;
+}
+
+@theme inline {
+  /* Colors */
+  --color-frost: var(--color-frost);
+  --color-alabaster: var(--color-alabaster);
+  --color-lavender: var(--color-lavender);
+  --color-dusk: var(--color-dusk);
+  --color-prussian: var(--color-prussian);
+  --color-ink: var(--color-ink);
+
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-foreground: var(--foreground);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-foreground-strong: var(--foreground-strong);
+  --color-accent: var(--accent);
+
+  /* Typography */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
+
+  /* Spacing */
+  --spacing-micro: var(--spacing-micro);
+  --spacing-related: var(--spacing-related);
+  --spacing-default: var(--spacing-default);
+  --spacing-section: var(--spacing-section);
+  --spacing-major: var(--spacing-major);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
