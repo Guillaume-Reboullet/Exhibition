@@ -1,9 +1,16 @@
 import "./scroll.css";
 import Image from "next/image";
 
-export default function Scroll() {
+interface ScrollProps {
+  onClick?: () => void;
+}
+
+export default function Scroll({ onClick }: ScrollProps) {
   return (
-    <div className="scroll-indicator absolute left-1/2 -translate-x-1/2  bottom-(--spacing-major)">
+    <button
+      onClick={onClick}
+      className="scroll-indicator absolute left-1/2 -translate-x-1/2 bottom-(--spacing-major) cursor-pointer bg-transparent border-none p-0"
+    >
       <Image
         src="/arrow_scroll.svg"
         alt="Scroll down"
@@ -11,6 +18,6 @@ export default function Scroll() {
         height={44}
         className="arrow"
       />
-    </div>
+    </button>
   );
 }
