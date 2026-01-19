@@ -4,7 +4,7 @@ import SplashScreen from "./_components/SplashScreen";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center justify-center">
       <SplashScreen
         name="Guillaume Reboullet"
         tagline="Minimaliste · Sophistiqué"
