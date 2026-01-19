@@ -18,7 +18,7 @@ export default function SplashScreen({
 }: SplashScreenProps) {
   return (
     <div
-      className={`fixed inset-0 z-50 transition-transform duration-800 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+      className={`fixed inset-0 z-50 transition-transform duration-800 ease-in-out ${
         isExiting ? "-translate-y-full" : ""
       }`}
     >
