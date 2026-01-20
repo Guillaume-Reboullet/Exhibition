@@ -40,20 +40,24 @@ export default function Project(props: ProjectProps) {
   const linkNameTwo = 'linkNameTwo' in props ? props.linkNameTwo : undefined;
 
   return (
-    <div className='flex flex-col gap-(--spacing-related)'>
+    <div className='flex flex-col gap-(--spacing-related) h-full'>
       <div>
         <h3>{title}</h3>
         <p className='small-text text-lavender!'>{subtitle}</p>
       </div>
       <Carousel images={images} />
-      <div className='flex flex-col gap-(--spacing-micro)'>
+      <div className='flex flex-col gap-(--spacing-micro) grow'>
         <p className='small-text font-serif'>{description}</p>
-        {link && linkName && <a href={link} target="_blank" rel="noopener noreferrer" className='small-text italic text-lavender! font-serif self-end'>{linkName}</a>}
-        <div className='w-full flex justify-between'>
-          {linkOne && linkNameOne && <a href={linkOne} target="_blank" rel="noopener noreferrer" className='small-text italic text-lavender! font-serif self-end'>{linkNameOne}</a>}
-          {linkTwo && linkNameTwo && <a href={linkTwo} target="_blank" rel="noopener noreferrer" className='small-text italic text-lavender! font-serif self-end'>{linkNameTwo}</a>}
+        <div className='mt-auto w-full'>
+          {link && linkName && <a href={link} target="_blank" rel="noopener noreferrer" className='small-text italic text-lavender! font-serif block text-right'>{linkName}</a>}
+          {linkOne && linkNameOne && linkTwo && linkNameTwo && (
+            <div className='flex justify-between w-full'>
+              <a href={linkOne} target="_blank" rel="noopener noreferrer" className='small-text italic text-lavender! font-serif'>{linkNameOne}</a>
+              <a href={linkTwo} target="_blank" rel="noopener noreferrer" className='small-text italic text-lavender! font-serif'>{linkNameTwo}</a>
+            </div>
+          )}
+          {quote && <blockquote className='small-text italic text-lavender! font-serif text-right'>"{quote}"</blockquote>}
         </div>
-        {quote && <blockquote className='small-text italic text-lavender! font-serif self-end'>"{quote}"</blockquote>}
       </div>
     </div>
   );

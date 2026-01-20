@@ -12,7 +12,7 @@ export default function Projects() {
 
       <div className="flex flex-col gap-(--spacing-default)">
         <h3 id="web">Site web</h3>
-        <div className="flex flex-col gap-(--spacing-related)">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-(--spacing-related)">
           <Project
             title="Whitecoats"
             subtitle="Plateforme vidéo/e-learning médicale"
@@ -27,7 +27,7 @@ export default function Projects() {
           />
           <Project
             title="Portfolio"
-            subtitle=""
+            subtitle="Minimaliste · Sophistiqué"
             description="Voici mon exposition de projets web et mobiles. Là où le design structure l’expérience et le détail fait la différence."
             images={[
               "/whitecoats/slide_1.png",
@@ -38,7 +38,7 @@ export default function Projects() {
           />
         </div>
         <h3 id="app">Application mobile</h3>
-        <div className="flex flex-col gap-(--spacing-related)">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-(--spacing-related)">
           <Project
             title="HoliYou"
             subtitle="Parcours PMA digitalisé"
@@ -66,7 +66,7 @@ export default function Projects() {
           />
         </div>
         <h3 id="devops">DevOps</h3>
-        <div className="flex flex-col gap-(--spacing-related)">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-(--spacing-related)">
           <Project
             title="Sentinel"
             subtitle="Observabilité · Supervision"
