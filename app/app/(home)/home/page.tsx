@@ -1,13 +1,14 @@
 import Header from "../../_components/Header";
 import NavigationPages from "../../_components/Navigation - Pages";
 import Contact from "../../_components/Contact";
+import NavigationPagesDesktop from "@/app/_components/Navigation - Pages Desktop";
 
 export default function Home() {
   return (
     <>
       <Header title="Développeur" subtitle="Web & Mobile" />
 
-      <nav className="flex flex-col gap-(--spacing-section)">
+      <nav className="flex flex-col gap-(--spacing-section) lg:hidden">
         <NavigationPages
           title="À propos"
           description="Qualité et fiabilité sont une nécessité."
@@ -22,6 +23,38 @@ export default function Home() {
           title="Projets marquants"
           description="Whitecoats · HoliYou"
           href="/projects"
+        />
+      </nav>
+
+      <nav className="gap-(--spacing-major) hidden lg:flex justify-around">
+        <NavigationPagesDesktop
+          title="À propos"
+          description="Qualité et fiabilité sont une nécessité."
+          href="/about"
+          items={[
+            { textes: "Qui suis-je ?" },
+            { textes: "Mes valeurs" },
+            { textes: "Ce que je recherche" },
+          ]}
+        />
+        <NavigationPagesDesktop
+          title="Expériences"
+          description=""
+          href="/experiences"
+          items={[
+            { title: "Henri 8", subtitles: ["Alternance, Paris · 2024 – 2025"] },
+            { title: "Epitech", subtitles: ["Web@cademy, Paris · 2023 – 2025", "Master of Science, Paris · 2025 – 2028"] },
+          ]}
+        />
+        <NavigationPagesDesktop
+          title="Projets marquants"
+          description=""
+          href="/projects"
+          items={[
+            { title: "Site web", subtitles: ["Whitecoats · Portfolio"] },
+            { title: "Application mobile", subtitles: ["HoliYou · Omniscience"] },
+            { title: "DevOps", subtitles: ["Sentinel"] },
+          ]}
         />
       </nav>
 
