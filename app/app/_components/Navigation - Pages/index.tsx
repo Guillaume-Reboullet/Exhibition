@@ -7,7 +7,7 @@ interface NavigationProps {
   href: string;
 }
 
-export default function Navigation({ title, description, href }: NavigationProps) {
+export default function NavigationPages({ title, description, href }: NavigationProps) {
   return (
     <Link
       href={href}

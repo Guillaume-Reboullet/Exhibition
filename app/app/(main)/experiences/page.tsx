@@ -1,6 +1,6 @@
-import Back from "../_components/Back";
-import Contact from "../_components/Contact";
-import Header from "../_components/Header";
+import Back from "@/app/_components/Back";
+import Contact from "@/app/_components/Contact";
+import Header from "@/app/_components/Header";
 
 export default function Experiences() {
   return (

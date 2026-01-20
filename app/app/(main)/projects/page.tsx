@@ -1,0 +1,106 @@
+import Contact from "@/app/_components/Contact";
+import Header from "@/app/_components/Header";
+import Project from "@/app/_components/Project";
+import NavigationProjectsTypes from "@/app/_components/Navigation - Projects Types";
+import Back from "@/app/_components/Back";
+
+export default function Projects() {
+  return (
+    <>
+      <Header title="Projets" subtitle="Web · Mobile · DevOps" />
+
+
+      <div className="flex flex-col gap-(--spacing-default)">
+        <h3 id="web">Site web</h3>
+        <div className="flex flex-col gap-(--spacing-related)">
+          <Project
+            title="Whitecoats"
+            subtitle="Plateforme vidéo/e-learning médicale"
+            description="Whitecoats est un média digital de formation médicale de nouvelle génération destiné à tous les professionnels de santé."
+            images={[
+              "/whitecoats/slide_1.png",
+              "/whitecoats/slide_2.png",
+              "/whitecoats/slide_3.png",
+            ]}
+            link="https://thewhitecoats.com/"
+            linkName="thewhitecoats.com"
+          />
+          <Project
+            title="Portfolio"
+            subtitle=""
+            description="Voici mon exposition de projets web et mobiles. Là où le design structure l’expérience et le détail fait la différence."
+            images={[
+              "/whitecoats/slide_1.png",
+              "/whitecoats/slide_2.png",
+              "/whitecoats/slide_3.png",
+            ]}
+            quote="Inspiré par Area17 x macOS Tahoe"
+          />
+        </div>
+        <h3 id="app">Application mobile</h3>
+        <div className="flex flex-col gap-(--spacing-related)">
+          <Project
+            title="HoliYou"
+            subtitle="Parcours PMA digitalisé"
+            description="HoliYou est conçue pour accompagner les personnes en parcours de PMA, avec une approche personnalisée et humaine."
+            images={[
+              "/holiyou/slide_1.png",
+              "/holiyou/slide_2.png",
+              "/holiyou/slide_3.png",
+            ]}
+            linkOne="https://apps.apple.com/fr/app/holiyou-fertilit%C3%A9/id6736368655"
+            linkNameOne="Apple Store"
+            linkTwo="https://play.google.com/store/apps/details?id=com.holiyou.app"
+            linkNameTwo="Google Play"
+          />
+          <Project
+            title="Omniscience"
+            subtitle="Apprentissage facilité par l’IA"
+            description="Omniscience vise à bâtir une connaissance universelle, capable de s’adapter à chaque utilisateur, du débutant à l’expert."
+            images={[
+              "/holiyou/slide_1.png",
+              "/holiyou/slide_2.png",
+              "/holiyou/slide_3.png",
+            ]}
+            quote="Pour une connaissance plus accessible"
+          />
+        </div>
+        <h3 id="devops">DevOps</h3>
+        <div className="flex flex-col gap-(--spacing-related)">
+          <Project
+            title="Sentinel"
+            subtitle="Observabilité · Supervision"
+            description="Tableau de bord sécurisé pour documenter, maintenir et surveiller en temps réel mon serveur dédié et mes applications."
+            images={[
+              "/whitecoats/slide_1.png",
+              "/whitecoats/slide_2.png",
+              "/whitecoats/slide_3.png",
+            ]}
+            link="https://my-server.guillaume-reboullet.com/"
+            linkName="my-server.com"
+          />
+        </div>
+      </div>
+
+      <Contact
+        title="Contactez-moi"
+        subtitle="Disponible pour une alternance"
+        email="guillaume1.reboullet@epitech.eu"
+        phone="+33 7 44 92 00 83"
+        linkedinUrl="https://www.linkedin.com/in/guillaume-reboullet/"
+        githubUrl="https://github.com/Guillaume-Reboullet/"
+      />
+
+      <div className="flex justify-center">
+        <NavigationProjectsTypes
+          items={[
+            { label: 'WEB', targetId: 'web' },
+            { label: 'APP', targetId: 'app' },
+            { label: 'DevOps', targetId: 'devops' },
+          ]}
+        />
+        <Back />
+      </div>
+    </>
+  );
+}

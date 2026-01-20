@@ -1,7 +1,7 @@
-import Header from "../_components/Header";
-import Navigation from "../_components/Navigation";
-import Contact from "../_components/Contact";
-import Back from "../_components/Back";
+import Header from "@/app/_components/Header";
+import Navigation from "@/app/_components/Navigation - Pages";
+import Contact from "@/app/_components/Contact";
+import Back from "@/app/_components/Back";
 
 export default function About() {
   return (

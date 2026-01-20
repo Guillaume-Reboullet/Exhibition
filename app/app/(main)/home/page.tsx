@@ -1,6 +1,6 @@
-import Header from "../_components/Header";
-import Navigation from "../_components/Navigation";
-import Contact from "../_components/Contact";
+import Header from "../../_components/Header";
+import NavigationPages from "../../_components/Navigation - Pages";
+import Contact from "../../_components/Contact";
 
 export default function Home() {
   return (
@@ -8,17 +8,17 @@ export default function Home() {
       <Header title="Développeur" subtitle="Web & Mobile" />
 
       <nav className="flex flex-col gap-(--spacing-section)">
-        <Navigation
+        <NavigationPages
           title="À propos"
           description="Qualité et fiabilité sont une nécessité."
           href="/about"
         />
-        <Navigation
+        <NavigationPages
           title="Expériences"
           description="Henri 8 · Epitech"
           href="/experiences"
         />
-        <Navigation
+        <NavigationPages
           title="Projets marquants"
           description="Whitecoats · HoliYou"
           href="/projects"
