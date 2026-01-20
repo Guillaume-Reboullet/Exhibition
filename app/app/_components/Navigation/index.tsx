@@ -14,10 +14,10 @@ export default function Navigation({ title, description, href }: NavigationProps
       className="flex items-center justify-between gap-(--spacing-micro)"
     >
       <div className="flex flex-col gap-(--spacing-micro)">
-        <h3 className="text-2xl font-semibold text-prussian group-hover:text-dusk transition-colors">
+        <h3>
           {title}
         </h3>
-        <p className="text-sm text-prussian">{description}</p>
+        <p className="small-text">{description}</p>
       </div>
       <Image
         src="/arrow_right.svg"

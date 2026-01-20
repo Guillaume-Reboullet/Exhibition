@@ -24,12 +24,12 @@ export default function SplashScreen({
     >
       <div className="flex min-h-screen flex-col items-center justify-center bg-frost">
         <div className="flex flex-col items-center gap-(--spacing-related) text-center">
-          <h1 className="text-5xl font-bold tracking-tight px-(--spacing-default) text-ink md:text-6xl">
+          <h1 className="px-(--spacing-default)">
             {name}
           </h1>
           <div className="flex flex-col items-center gap-(--spacing-micro) text-center">
-            <p className="font-serif text-lg italic text-lavender">{tagline}</p>
-            <p className="font-serif text-lg italic text-lavender">{inspiration}</p>
+            <p className="font-serif text-base/[25px] italic text-lavender">{tagline}</p>
+            <p className="font-serif text-base/[25px] italic text-lavender">{inspiration}</p>
           </div>
         </div>
         <Loader />
