@@ -4,7 +4,7 @@ import Contact from "../_components/Contact";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-frost px-(--spacing-default) flex flex-col gap-(--spacing-major) justify-around">
+    <>
       <Header title="Développeur" subtitle="Web & Mobile" />
 
       <nav className="flex flex-col gap-(--spacing-section)">
@@ -33,6 +33,6 @@ export default function Home() {
         linkedinUrl="https://www.linkedin.com/in/guillaume-reboullet/"
         githubUrl="https://github.com/Guillaume-Reboullet/"
       />
-    </div>
+    </>
   );
 }
