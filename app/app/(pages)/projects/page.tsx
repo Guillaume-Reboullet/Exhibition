@@ -10,7 +10,7 @@ export default function Projects() {
       <Header title="Projets" subtitle="Web · Mobile · DevOps" />
 
 
-      <div className="flex flex-col gap-(--spacing-default)">
+      <div className="flex flex-col gap-(--spacing-default) lg:max-w-250 align-self-center">
         <h3 id="web">Site web</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-(--spacing-related)">
           <Project

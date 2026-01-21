@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Header title="Développeur" subtitle="Web & Mobile" />
 
-      <nav className="flex flex-col gap-(--spacing-section) lg:hidden">
+      <nav className="flex flex-col gap-(--spacing-section) xl:hidden">
         <NavigationPages
           title="À propos"
           description="Qualité et fiabilité sont une nécessité."
@@ -26,7 +26,7 @@ export default function Home() {
         />
       </nav>
 
-      <nav className="gap-(--spacing-major) hidden lg:flex justify-around">
+      <nav className="gap-(--spacing-major) hidden xl:flex justify-around">
         <NavigationPagesDesktop
           title="À propos"
           description="Qualité et fiabilité sont une nécessité."
