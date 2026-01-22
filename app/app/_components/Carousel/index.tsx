@@ -10,7 +10,7 @@ export default function Carousel({ images }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
-    <div className="flex flex-col gap-(--spacing-related)">
+    <div className="flex flex-col gap-(--spacing-related) border border-dusk/20 rounded-lg p-(--spacing-related) group transition-all hover:shadow-lg">
       <div className="relative w-full">
         <img 
           src={images[currentIndex]} 

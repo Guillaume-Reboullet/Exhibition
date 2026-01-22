@@ -1,6 +1,6 @@
 import Header from "../../_components/Header";
 import NavigationPagesMobile from "../../_components/Navigation - Pages Mobile";
-import Contact from "../../_components/Contact";
+import Contact from "../../_components/Contact - Mobile";
 import NavigationPagesDesktop from "@/app/_components/Navigation - Pages Desktop";
 import NavigationPagesTablet from "@/app/_components/Navigation - Pages Tablet";
 import TechBanner from "@/app/_components/TechBanner";
@@ -127,6 +127,7 @@ export default function Home() {
         phone="+33 7 44 92 00 83"
         linkedinUrl="https://www.linkedin.com/in/guillaume-reboullet/"
         githubUrl="https://github.com/Guillaume-Reboullet/"
+        marginBottom={24}
       />
     </>
   );

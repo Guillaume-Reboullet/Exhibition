@@ -5,7 +5,7 @@ import Back from "@/app/_components/Back";
 
 export default function About() {
   return (
-    <>
+    <div className="flex flex-col gap-(--spacing-default) sm:gap-(--spacing-section) xl:gap-(--spacing-major)">
       <Header title="À propos" subtitle="Guillaume Reboullet" />
 
       <div className="flex flex-col gap-(--spacing-section) lg:max-w-250 align-self-center">
@@ -58,11 +58,9 @@ export default function About() {
         phone="+33 7 44 92 00 83"
         linkedinUrl="https://www.linkedin.com/in/guillaume-reboullet/"
         githubUrl="https://github.com/Guillaume-Reboullet/"
+        marginBottom={24}
       />
 
-      <div className="flex justify-center mt-(--spacing-section)">
-        <Back />
-      </div>
-    </>
+    </div>
   );
 }

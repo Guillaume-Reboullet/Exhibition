@@ -49,14 +49,14 @@ export default function Project(props: ProjectProps) {
       <div className='flex flex-col gap-(--spacing-micro) grow'>
         <p className='small-text font-serif'>{description}</p>
         <div className='mt-auto w-full'>
-          {link && linkName && <a href={link} target="_blank" rel="noopener noreferrer" className='small-text italic text-lavender! font-serif block text-right'>{linkName}</a>}
+          {link && linkName && <a href={link} target="_blank" rel="noopener noreferrer" className='small-text text-sm! xl:text-[16px]! italic text-lavender! font-serif block text-right'>{linkName}</a>}
           {linkOne && linkNameOne && linkTwo && linkNameTwo && (
             <div className='flex justify-between w-full'>
-              <a href={linkOne} target="_blank" rel="noopener noreferrer" className='small-text italic text-lavender! font-serif'>{linkNameOne}</a>
-              <a href={linkTwo} target="_blank" rel="noopener noreferrer" className='small-text italic text-lavender! font-serif'>{linkNameTwo}</a>
+              <a href={linkOne} target="_blank" rel="noopener noreferrer" className='small-text text-sm! xl:text-[16px]! italic text-lavender! font-serif'>{linkNameOne}</a>
+              <a href={linkTwo} target="_blank" rel="noopener noreferrer" className='small-text text-sm! xl:text-[16px]! italic text-lavender! font-serif'>{linkNameTwo}</a>
             </div>
           )}
-          {quote && <blockquote className='small-text italic text-lavender! font-serif text-right'>"{quote}"</blockquote>}
+          {quote && <blockquote className='small-text text-sm! xl:text-[16px]! italic text-lavender! font-serif text-right'>"{quote}"</blockquote>}
         </div>
       </div>
     </div>

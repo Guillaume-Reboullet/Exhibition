@@ -1,16 +1,14 @@
 import Contact from "@/app/_components/Contact";
 import Header from "@/app/_components/Header";
 import Project from "@/app/_components/Project";
-import NavigationProjectsTypes from "@/app/_components/Navigation - Projects Types";
-import Back from "@/app/_components/Back";
 
 export default function Projects() {
   return (
-    <>
+    <div className="flex flex-col gap-(--spacing-default) sm:gap-(--spacing-section) xl:gap-(--spacing-major)">
+
       <Header title="Projets" subtitle="Web · Mobile · DevOps" />
 
-
-      <div className="flex flex-col gap-(--spacing-default) lg:max-w-250 align-self-center">
+      <div className="flex flex-col sm:gap-(--spacing-default) lg:max-w-275 align-self-center">
         <h3 id="web">Site web</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-(--spacing-related)">
           <Project
@@ -18,9 +16,9 @@ export default function Projects() {
             subtitle="Plateforme vidéo/e-learning médicale"
             description="Whitecoats est un média digital de formation médicale de nouvelle génération destiné à tous les professionnels de santé."
             images={[
-              "/whitecoats/slide_1.png",
-              "/whitecoats/slide_2.png",
-              "/whitecoats/slide_3.png",
+              "/project/whitecoats/slide_1.png",
+              "/project/whitecoats/slide_2.png",
+              "/project/whitecoats/slide_3.png",
             ]}
             link="https://thewhitecoats.com/"
             linkName="thewhitecoats.com"
@@ -30,9 +28,9 @@ export default function Projects() {
             subtitle="Minimaliste · Sophistiqué"
             description="Voici mon exposition de projets web et mobiles. Là où le design structure l’expérience et le détail fait la différence."
             images={[
-              "/whitecoats/slide_1.png",
-              "/whitecoats/slide_2.png",
-              "/whitecoats/slide_3.png",
+              "/project/portfolio/slide_1.png",
+              "/project/portfolio/slide_2.png",
+              "/project/portfolio/slide_3.png",
             ]}
             quote="Inspiré par Area17 x macOS Tahoe"
           />
@@ -44,9 +42,9 @@ export default function Projects() {
             subtitle="Parcours PMA digitalisé"
             description="HoliYou est conçue pour accompagner les personnes en parcours de PMA, avec une approche personnalisée et humaine."
             images={[
-              "/holiyou/slide_1.png",
-              "/holiyou/slide_2.png",
-              "/holiyou/slide_3.png",
+              "/project/holiyou/slide_1.png",
+              "/project/holiyou/slide_2.png",
+              "/project/holiyou/slide_3.png",
             ]}
             linkOne="https://apps.apple.com/fr/app/holiyou-fertilit%C3%A9/id6736368655"
             linkNameOne="Apple Store"
@@ -58,11 +56,11 @@ export default function Projects() {
             subtitle="Apprentissage facilité par l’IA"
             description="Omniscience vise à bâtir une connaissance universelle, capable de s’adapter à chaque utilisateur, du débutant à l’expert."
             images={[
-              "/holiyou/slide_1.png",
-              "/holiyou/slide_2.png",
-              "/holiyou/slide_3.png",
+              "/project/holiyou/slide_1.png",
+              "/project/holiyou/slide_2.png",
+              "/project/holiyou/slide_3.png",
             ]}
-            quote="Pour une connaissance plus accessible"
+            quote="Une connaissance plus accessible"
           />
         </div>
         <h3 id="devops">DevOps</h3>
@@ -72,9 +70,9 @@ export default function Projects() {
             subtitle="Observabilité · Supervision"
             description="Tableau de bord sécurisé pour documenter, maintenir et surveiller en temps réel mon serveur dédié et mes applications."
             images={[
-              "/whitecoats/slide_1.png",
-              "/whitecoats/slide_2.png",
-              "/whitecoats/slide_3.png",
+              "/project/sentinel/slide_1.png",
+              "/project/sentinel/slide_2.png",
+              "/project/sentinel/slide_3.png",
             ]}
             link="https://my-server.guillaume-reboullet.com/"
             linkName="my-server.com"
@@ -89,18 +87,8 @@ export default function Projects() {
         phone="+33 7 44 92 00 83"
         linkedinUrl="https://www.linkedin.com/in/guillaume-reboullet/"
         githubUrl="https://github.com/Guillaume-Reboullet/"
+        marginBottom={80}
       />
-
-      <div className="flex justify-center">
-        <NavigationProjectsTypes
-          items={[
-            { label: 'WEB', targetId: 'web' },
-            { label: 'APP', targetId: 'app' },
-            { label: 'DevOps', targetId: 'devops' },
-          ]}
-        />
-        <Back />
-      </div>
-    </>
+    </div>
   );
 }

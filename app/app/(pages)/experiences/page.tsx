@@ -5,7 +5,7 @@ import ExperienceCard from "@/app/_components/ExperienceCard";
 
 export default function Experiences() {
   return (
-    <>
+    <div className="flex flex-col gap-(--spacing-default) sm:gap-(--spacing-section) xl:gap-(--spacing-major)">
       <Header title="Expériences" subtitle="Henri 8 x Epitech" />
 
       <div className="flex flex-col gap-(--spacing-section) lg:max-w-250 align-self-center">
@@ -57,11 +57,8 @@ export default function Experiences() {
         phone="+33 7 44 92 00 83"
         linkedinUrl="https://www.linkedin.com/in/guillaume-reboullet/"
         githubUrl="https://github.com/Guillaume-Reboullet/"
+        marginBottom={24}
       />
-
-      <div className="flex justify-center mt-(--spacing-section)">
-        <Back />
-      </div>
-    </>
+    </div>
   );
 }
