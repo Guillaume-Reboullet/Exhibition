@@ -11,10 +11,10 @@ export default function NavigationPages({ title, description, href }: Navigation
   return (
     <Link
       href={href}
-      className="flex items-center justify-between gap-(--spacing-micro)"
+      className="flex items-center justify-between gap-(--spacing-related)"
     >
       <div className="flex flex-col gap-(--spacing-micro)">
-        <h3>
+        <h3 className="text-2xl! md:text-3xl!">
           {title}
         </h3>
         <p className="small-text">{description}</p>
@@ -24,7 +24,7 @@ export default function NavigationPages({ title, description, href }: Navigation
         alt=""
         width={24}
         height={24}
-        className="text-dusk opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all"
+        className="text-dusk opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all self-center"
       />
     </Link>
   );

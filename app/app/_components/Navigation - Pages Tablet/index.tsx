@@ -16,10 +16,10 @@ export default function NavigationPagesTablet({ title, description, images, href
   return (
     <Link
       href={href}
-      className="flex w-full border border-dusk/20 rounded-lg p-(--spacing-default) group hover:bg-dusk/10 transition-all"
+      className="flex w-full max-w-200 border border-dusk/20 rounded-lg p-(--spacing-related) group hover:bg-dusk/10 transition-all"
     >
       <div className="flex gap-(--spacing-related) w-full justify-between">
-        <div className="flex flex-col gap-(--spacing-default)">
+        <div className="flex flex-col justify-between gap-(--spacing-default)">
           {(title || description) && (
             <div className="flex flex-col gap-(--spacing-micro) small-text">
               {title && <h3>{title}</h3>}
@@ -53,7 +53,7 @@ export default function NavigationPagesTablet({ title, description, images, href
                 <div className="flex flex-col justify-between gap-(--spacing-related)">
                   {items.map((item, index) => (
                     (item.title || item.subtitles) && (
-                      <div key={index} className="flex items-center gap-(--spacing-default)">
+                      <div key={index} className="flex items-center gap-(--spacing-micro)">
                         {images && images[index] && (
                           <div className="relative w-16 h-16">
                             <Image
@@ -67,16 +67,9 @@ export default function NavigationPagesTablet({ title, description, images, href
                         <div className="flex flex-col">
                           {item.title && <p className="medium-text">{item.title}</p>}
                           {item.subtitles && item.subtitles.length > 0 && (
-                            <ul className="flex flex-col gap-(--spacing-related)">
+                            <ul>
                               {item.subtitles.map((subtitle, subIndex) => (
-                                <li key={subIndex} className="small-text text-lavender! list-none">
-                                  {subtitle.split(',').map((part, partIndex) => (
-                                    <span key={partIndex}>
-                                      {part.trim()}
-                                      {partIndex < subtitle.split(',').length - 1 && <br />}
-                                    </span>
-                                  ))}
-                                </li>
+                                <li key={subIndex} className="small-text text-lavender! list-none">{subtitle}</li>
                               ))}
                             </ul>
                           )}
