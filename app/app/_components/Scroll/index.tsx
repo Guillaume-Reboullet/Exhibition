@@ -1,4 +1,4 @@
-import "./scroll.css";
+import "./style.css";
 import Image from "next/image";
 
 interface ScrollProps {
