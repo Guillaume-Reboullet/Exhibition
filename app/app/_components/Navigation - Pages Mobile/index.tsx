@@ -7,7 +7,7 @@ interface NavigationProps {
   href: string;
 }
 
-export default function NavigationPages({ title, description, href }: NavigationProps) {
+export default function NavigationPagesMobile({ title, description, href }: NavigationProps) {
   return (
     <Link
       href={href}
