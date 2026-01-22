@@ -1,6 +1,6 @@
 import Header from "../../_components/Header";
 import NavigationPagesMobile from "../../_components/Navigation - Pages Mobile";
-import Contact from "../../_components/Contact - Mobile";
+import Contact from "../../_components/Contact";
 import NavigationPagesDesktop from "@/app/_components/Navigation - Pages Desktop";
 import NavigationPagesTablet from "@/app/_components/Navigation - Pages Tablet";
 import TechBanner from "@/app/_components/TechBanner";
