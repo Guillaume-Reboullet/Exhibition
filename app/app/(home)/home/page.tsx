@@ -34,7 +34,7 @@ export default function Home() {
           <NavigationPagesTablet
             title="À propos"
             description="Qualité et fiabilité sont une nécessité."
-            images={[{ src: "photo_profile.jpeg", alt: "Profile photo" }]}
+            images={[{ src: "about/photo_profile.jpeg", alt: "Profile photo" }]}
             href="/about"
             items={[
               { textes: "Qui suis-je ?" },
@@ -45,7 +45,7 @@ export default function Home() {
           <NavigationPagesTablet
             title="Expériences"
             description=""
-            images={[{ src: "agence_henri_8_logo.jpeg", alt: "Agence Henri 8 logo" }, { src: "epitech_logo.png", alt: "Epitech logo" }]}
+            images={[{ src: "exp/agence_henri_8_logo.jpeg", alt: "Agence Henri 8 logo" }, { src: "exp/epitech_logo.png", alt: "Epitech logo" }]}
             href="/experiences"
             items={[
               { title: "Henri 8", subtitles: ["Alternance, Paris · 2024 – 2025"] },
@@ -55,7 +55,7 @@ export default function Home() {
           <NavigationPagesTablet
             title="Projets marquants"
             description=""
-            images={[{ src: "web_icon.png", alt: "Icon web site" }, { src: "mobile_icon.png", alt: "Icon mobile app" }, { src: "devops_icon.webp", alt: "Icon devops" }]}
+            images={[{ src: "project/icons/web_icon.webp", alt: "Icon web site" }, { src: "project/icons/mobile_icon.png", alt: "Icon mobile app" }, { src: "project/icons/devops_icon.webp", alt: "Icon devops" }]}
             href="/projects"
             items={[
               { title: "Site web", subtitles: ["Whitecoats · Portfolio"] },
@@ -70,7 +70,7 @@ export default function Home() {
         <NavigationPagesDesktop
           title="À propos"
           description="Qualité et fiabilité sont une nécessité."
-          images={[{ src: "photo_profile.jpeg", alt: "Profile photo" }]}
+          images={[{ src: "about/photo_profile.jpeg", alt: "Profile photo" }]}
           href="/about"
           items={[
             { textes: "Qui suis-je ?" },
@@ -81,7 +81,7 @@ export default function Home() {
         <NavigationPagesDesktop
           title="Expériences"
           description=""
-          images={[{ src: "agence_henri_8_logo.jpeg", alt: "Agence Henri 8 logo" }, { src: "epitech_logo.png", alt: "Epitech logo" }]}
+          images={[{ src: "exp/agence_henri_8_logo.jpeg", alt: "Agence Henri 8 logo" }, { src: "exp/epitech_logo.png", alt: "Epitech logo" }]}
           href="/experiences"
           items={[
             { title: "Henri 8", subtitles: ["Alternance,Paris · 2024 – 2025"] },
@@ -91,7 +91,7 @@ export default function Home() {
         <NavigationPagesDesktop
           title="Projets marquants"
           description=""
-          images={[{ src: "web_icon.png", alt: "Icon web site" }, { src: "mobile_icon.png", alt: "Icon mobile app" }, { src: "devops_icon.webp", alt: "Icon devops" }]}
+          images={[{ src: "project/icons/web_icon.webp", alt: "Icon web site" }, { src: "project/icons/mobile_icon.png", alt: "Icon mobile app" }, { src: "project/icons/devops_icon.webp", alt: "Icon devops" }]}
           href="/projects"
           items={[
             { title: "Site web", subtitles: ["Whitecoats · Portfolio"] },

@@ -6,7 +6,7 @@ export default function Back() {
     <Link href="/home">
       <div className='flex justify-center items-center w-10 h-10 rounded-full bg-dusk fixed bottom-6 right-6 cursor-pointer'>
         <Image
-          src="/arrow_back.svg"
+          src="/ui/arrow_back.svg"
           alt="Back"
           width={18}
           height={18}

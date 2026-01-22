@@ -43,7 +43,7 @@ export default function ExperienceCard({
 
       <div className="flex w-full justify-center">
         <Image
-          src="/arrow_right.svg"
+          src="/ui/arrow_right.svg"
           alt="open/close button"
           width={36}
           height={36}

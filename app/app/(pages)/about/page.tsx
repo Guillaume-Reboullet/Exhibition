@@ -11,7 +11,7 @@ export default function About() {
       <div className="flex flex-col gap-(--spacing-section) lg:max-w-250 align-self-center">
         <div className="flex flex-col gap-(--spacing-related) items-center w-full sm:flex-row sm:items-center sm:justify-center sm:gap-(--spacing-default)">
           <Image
-            src="/photo_profile.jpeg"
+            src="/about/photo_profile.jpeg"
             alt="Portrait de Guillaume Reboullet"
             width={125}
             height={125}

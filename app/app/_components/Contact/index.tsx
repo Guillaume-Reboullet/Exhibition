@@ -50,7 +50,7 @@ export default function Contact({
             rel="noopener noreferrer"
             className="opacity-60 hover:opacity-100 transition-opacity"
           >
-            <Image src="/linkedin.svg" alt="LinkedIn" width={36} height={36} />
+            <Image src="/contact/linkedin.svg" alt="LinkedIn" width={36} height={36} />
           </Link>
           <Link
             href={githubUrl}
@@ -58,7 +58,7 @@ export default function Contact({
             rel="noopener noreferrer"
             className="opacity-60 hover:opacity-100 transition-opacity"
           >
-            <Image src="/github.svg" alt="GitHub" width={36} height={36} />
+            <Image src="/contact/github.svg" alt="GitHub" width={36} height={36} />
           </Link>
         </div>
       </div>

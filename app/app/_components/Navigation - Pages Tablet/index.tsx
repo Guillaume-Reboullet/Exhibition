@@ -83,7 +83,7 @@ export default function NavigationPagesTablet({ title, description, images, href
           </div>
         </div>
         <Image
-          src="/arrow_right.svg"
+          src="/ui/arrow_right.svg"
           alt=""
           width={48}
           height={48}

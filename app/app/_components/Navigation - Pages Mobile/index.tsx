@@ -20,7 +20,7 @@ export default function NavigationPagesMobile({ title, description, href }: Navi
         <p className="small-text">{description}</p>
       </div>
       <Image
-        src="/arrow_right.svg"
+        src="/ui/arrow_right.svg"
         alt=""
         width={24}
         height={24}

@@ -12,7 +12,7 @@ export default function Scroll({ onClick }: ScrollProps) {
       className="scroll-indicator absolute left-1/2 -translate-x-1/2 bottom-(--spacing-section) cursor-pointer"
     >
       <Image
-        src="/arrow_scroll.svg"
+        src="/ui/arrow_scroll.svg"
         alt="Scroll down"
         width={35}
         height={44}
